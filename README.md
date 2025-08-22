@@ -292,7 +292,10 @@ WHERE f.DateKey BETWEEN '2025-06-25' AND '2025-07-11'
 GROUP BY  f.DateKey, c.CapType,c.CapMaterial,s.SupplierID_Natural,s.SupplierName,s.country;
 ```
 
+### Root Cause Summary
+The sudden rise in LeakyCap defects on July 2–3, 2025 was linked to a faulty supplier batch, not internal operations. This caused higher cap waste  but was confirmed as a supplier quality issue, not an ongoing risk.
 
+### VISUALIZATIONS
 
 
 
