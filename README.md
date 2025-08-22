@@ -4,12 +4,12 @@
 - [CONTEXT AND PROBLEM](#context-and-problem)     
 - [BUSINESS IMPACT](#business-impact)   
 - [ER DIAGRAM](#er-diagram)  
-- [DATA CLEANING: Phase Process](#data-cleaning:-phase-process)
+- [DATA CLEANING](#data-cleaning)
 - [ANALYSIS](#analysis)  
 - [QUERIES AND LOGIC USED (VIEWS)](#queries-and-logic-used-(views))
-- [VISUALIZATIONS](#VISUALIZATIONS)
-- [RECOMMENDATIONS](#RECOMMENDATIONS)
-- [WHY WE ARE CONFIDENT THE FIX WILL WORK](#WHY-WE-ARE-CONFIDENT-THE-FIX-WILL-WORK)
+- [VISUALIZATIONS](#visualizations)
+- [RECOMMENDATIONS](#recommendations)
+- [WHY WE ARE CONFIDENT THE FIX WILL WORK](#why-we-are-confident-the-fix-will-work)
 
 ## CONTEXT AND PROBLEM
 In the same operational week at the Onitsha plant, Nature Best Juice Co. experienced an unusual spike in Leaky Cap defects across multiple lines, concentrated on July 2–3, 2025. The surge exceeded normal levels, disrupted production, and signaled potential issues in the capping process, materials, or controls that need urgent investigation.
@@ -41,7 +41,7 @@ The ER diagram is use to visualize table relationships and track foreign keys us
 
 <img width="502" height="404" alt="ER diagram" src="https://github.com/user-attachments/assets/94f76626-16ae-4a94-88d7-0950338b4ef4" />
 
-## DATA CLEANING: Phase Process
+## DATA CLEANING
 
   **PHASE 1**
 
