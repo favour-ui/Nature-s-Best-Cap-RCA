@@ -41,7 +41,7 @@ The ER diagram is use to visualize table relationships and track foreign keys us
 
 <img width="502" height="404" alt="ER diagram" src="https://github.com/user-attachments/assets/94f76626-16ae-4a94-88d7-0950338b4ef4" />
 
-## DATA CLEANING
+## DATA CLEANING: Phase Process
 
   **PHASE 1**
 
