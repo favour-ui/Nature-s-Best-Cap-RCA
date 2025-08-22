@@ -1,35 +1,39 @@
 # Nature's Best Drink leakyCap RCA
 
 ## 📚 Table of Contents
-- [Context and problem](#context-and-problem)  
+- [CONTEXT AND PROBLEM](#context-and-problem)  
 - [Problem Statement](#problem-statement)  
 - [Who are the stakeholders](#who-are-the-stakeholders)  
-- [Business Impact](#business-impact)  
+- [BUSINESS IMPACT](#BUSINESS-IMPACT)  
 - [Data Exploration and Schema Design](#data-exploration-and-schema-design)  
-- [ER Diagram](#er-diagram)  
-- [Data cleaning phase process](#data-cleaning-phase-process)
+- [ER DIAGRAM](#er-diagram)  
+- [DATA CLEANING](#DATA-CLEANING)
     - [PHASE 1](#phase-1)
     - [PHASE 2](#phase-2)
     - [PHASE 3](#phase-3)
     - [PHASE 4](#phase-4)
-- [Dashboard Features](#dashboard-features)  
-- [Results/Findings](#resultsfindings)  
-- [Recommendations](#recommendations)
+- [Hypothesis Exploration](#Hypothesis-Exploration)  
+- [ANALYSIS](#ANALYSIS)  
+- [QUERIES AND LOGIC USED (VIEWS)](#Queries-and-logic-used-(VIEWS))
+- [Root Cause Summary](#Root-Cause-Summary)
+- [VISUALIZATIONS](#VISUALIZATIONS)
+- [RECOMMENDATIONS](#RECOMMENDATIONS)
+- [WHY WE ARE CONFIDENT THE FIX WILL WORK](#WHY-WE-ARE-CONFIDENT-THE-FIX-WILL-WORK)
 
 
 
-## Context and problem
+## CONTEXT AND PROBLEM
 In the same operational week at the Onitsha plant, Nature Best Juice Co. experienced an unusual spike in Leaky Cap defects across multiple lines, concentrated on July 2–3, 2025. The surge exceeded normal levels, disrupted production, and signaled potential issues in the capping process, materials, or controls that need urgent investigation.
 
-## Problem Statement
+### Problem Statement
 During the same operational week at the Onitsha plant, Nature Best Juice Co. experienced an unusual and sharp spike in Leaky Cap defects across multiple production lines. The issue was concentrated on Wednesday, July 2, 2025, and Thursday, July 3, 2025, significantly exceeding defect levels recorded on other days within the week. This sudden rise in defective caps disrupted normal production performance and highlighted a potential underlying issue within the capping process, materials, or operational controls that requires immediate investigation and resolution.
 
-## Who are the stakeholders
+### Who are the stakeholders
  - **Procurement Manager** → suspects a bad batch from a supplier 
  - **Quality Control Lead** → needs clarity on whether this was a system-wide issue 
  - **Line Managers** → want to isolate the problem quickly to resume normal production
 
-## Business Impact
+## BUSINESS IMPACT
 From the 2 days of leaky cap issues (July 2–3):
  - 3,355 leaky caps recorded, with thousands more in the following week
  - Daily losses jumped to 34.3% compared to just 2.1% the previous week
@@ -42,13 +46,13 @@ We worked on a structured production dataset built around a star schema with a c
 - **DimCapBatch** -- This table provides information about each delivery (batch) of bottle caps we 
 receive. 
 
-## ER Diagram
+### ER DIAGRAM
 
 The ER diagram is use to visualize table relationships and track foreign keys used during analysis.
 
 <img width="502" height="404" alt="ER diagram" src="https://github.com/user-attachments/assets/94f76626-16ae-4a94-88d7-0950338b4ef4" />
 
-## Data cleaning phase process
+## DATA CLEANING
 
   **PHASE 1**
 
@@ -309,10 +313,10 @@ WHERE f.DateKey BETWEEN '2025-06-25' AND '2025-07-11'
 GROUP BY  f.DateKey, c.CapType,c.CapMaterial,s.SupplierID_Natural,s.SupplierName,s.country;
 ```
 
-### Root Cause Summary
+## Root Cause Summary
 The sudden rise in LeakyCap defects on July 2–3, 2025 was linked to a faulty supplier batch, not internal operations. This caused higher cap waste  but was confirmed as a supplier quality issue, not an ongoing risk.
 
-### VISUALIZATIONS
+## VISUALIZATIONS
 
 |Procurement Manager|
 |------|
@@ -325,13 +329,13 @@ The sudden rise in LeakyCap defects on July 2–3, 2025 was linked to a faulty s
  <img width="616" height="346" alt="Quality Control Lead" src="https://github.com/user-attachments/assets/abada81b-711e-4f24-b7c9-5d46d8e6191f" />
 
 
-### RECOMMENDATIONS
+## RECOMMENDATIONS
 
   - Pause or limit supply of Anambra Glass & PET HDPE 28mm PCO1881 caps   until quality issues are fully resolved to prevent further defective products and financial losses.
 
  - Rely on established suppliers such as Premium Closures NG, ADAC Containers Ltd., and Eco Cap Supplies, who have demonstrated stable performance, to maintain production reliability and minimize risk.
 
-### WHY WE ARE CONFIDENT THE FIX WILL WORK
+## WHY WE ARE CONFIDENT THE FIX WILL WORK
 
  **1. Supplier-Linked Defect:** Analysis confirmed that the spike in leaky caps on July 2–3 came entirely from Anambra Glass & PET’s HDPE 28mm PCO1881 batch, with other suppliers unaffected.
 
