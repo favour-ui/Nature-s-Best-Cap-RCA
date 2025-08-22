@@ -6,7 +6,7 @@
 - [ER DIAGRAM](#er-diagram)  
 - [DATA CLEANING](#data-cleaning)
 - [ANALYSIS](#analysis)  
-- [QUERIES AND LOGIC USED (VIEWS)](#queries-and-logic-used-(views))
+- [QUERIES AND LOGIC USED (VIEWS)](#queries-and-logic-used-views)
 - [VISUALIZATIONS](#visualizations)
 - [RECOMMENDATIONS](#recommendations)
 - [WHY WE ARE CONFIDENT THE FIX WILL WORK](#why-we-are-confident-the-fix-will-work)
