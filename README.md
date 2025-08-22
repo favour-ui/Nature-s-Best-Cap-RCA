@@ -184,7 +184,7 @@ Rechecked the columns to confirm no remaining NULL values.
 ## QUERIES AND LOGIC USED (VIEWS)
 We created 4 unified view to simpplify analysis and reuse in PowerBi
 
-Logic
+**Logic**
 
 **View 1:** Defect Days (2–3 July 2025)
 
@@ -269,6 +269,7 @@ GROUP BY f.DateKey, c.CapType, c.CapMaterial, s.SupplierName;
 
 A view covering the entire period from 25 June to 11 July 2025 for side-by-side comparison.
 
+```sql
 CREATE VIEW allmetrics AS
 SELECT 
 	c.CapMaterial,
