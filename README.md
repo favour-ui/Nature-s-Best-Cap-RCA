@@ -306,13 +306,19 @@ The sudden rise in LeakyCap defects on July 2–3, 2025 was linked to a faulty s
  |------|
  
  <img width="616" height="346" alt="Quality Control Lead" src="https://github.com/user-attachments/assets/abada81b-711e-4f24-b7c9-5d46d8e6191f" />
- 
- |Line Managers|
- |------|
- 
- <img width="602" height="328" alt="Line Managers" src="https://github.com/user-attachments/assets/9a12cfd6-eacc-423f-b5fb-31bdf64ea641" /> |
 
 
+### RECOMMENDATIONS
 
+  - Pause or limit supply of Anambra Glass & PET HDPE 28mm PCO1881 caps   until quality issues are fully resolved to prevent further defective products and financial losses.
 
+ - Rely on established suppliers such as Premium Closures NG, ADAC Containers Ltd., and Eco Cap Supplies, who have demonstrated stable performance, to maintain production reliability and minimize risk.
+
+### WHY WE ARE CONFIDENT THE FIX WILL WORK
+
+ 1. **Supplier-Linked Defect:** Analysis confirmed that the spike in leaky caps on July 2–3 came entirely from Anambra Glass & PET’s HDPE 28mm PCO1881 batch, with other suppliers unaffected.
+
+ 2. **Root Cause Verified:** Previous data shows no prior issues with this cap type from other suppliers, ruling out internal production or handling as the cause.
+
+ 3. **Proven Corrective Action:** Stopping or limiting supply from the faulty batch and checking the supplier’s process directly addresses the problem, making sure that future supply caps are good quality.
 
