@@ -1,26 +1,15 @@
 # Nature's Best Drink leakyCap RCA
 
 ## 📚 Table of Contents
-- [CONTEXT AND PROBLEM](#context-and-problem)  
-- [Problem Statement](#problem-statement)  
-- [Who are the stakeholders](#who-are-the-stakeholders)  
-- [BUSINESS IMPACT](#BUSINESS-IMPACT)  
-- [Data Exploration and Schema Design](#data-exploration-and-schema-design)  
+- [CONTEXT AND PROBLEM](#context-and-problem)     
+- [BUSINESS IMPACT](#business-impact)   
 - [ER DIAGRAM](#er-diagram)  
-- [DATA CLEANING](#DATA-CLEANING)
-    - [PHASE 1](#phase-1)
-    - [PHASE 2](#phase-2)
-    - [PHASE 3](#phase-3)
-    - [PHASE 4](#phase-4)
-- [Hypothesis Exploration](#Hypothesis-Exploration)  
-- [ANALYSIS](#ANALYSIS)  
-- [QUERIES AND LOGIC USED (VIEWS)](#Queries-and-logic-used-(VIEWS))
-- [Root Cause Summary](#Root-Cause-Summary)
+- [DATA CLEANING: Phase Process](#data-cleaning:-phase-process)
+- [ANALYSIS](#analysis)  
+- [QUERIES AND LOGIC USED (VIEWS)](#queries-and-logic-used-(views))
 - [VISUALIZATIONS](#VISUALIZATIONS)
 - [RECOMMENDATIONS](#RECOMMENDATIONS)
 - [WHY WE ARE CONFIDENT THE FIX WILL WORK](#WHY-WE-ARE-CONFIDENT-THE-FIX-WILL-WORK)
-
-
 
 ## CONTEXT AND PROBLEM
 In the same operational week at the Onitsha plant, Nature Best Juice Co. experienced an unusual spike in Leaky Cap defects across multiple lines, concentrated on July 2–3, 2025. The surge exceeded normal levels, disrupted production, and signaled potential issues in the capping process, materials, or controls that need urgent investigation.
