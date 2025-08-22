@@ -30,6 +30,28 @@ The ER diagram is use to visualize table relationships and track foreign keys us
 
 <img width="502" height="404" alt="ER diagram" src="https://github.com/user-attachments/assets/94f76626-16ae-4a94-88d7-0950338b4ef4" />
 
+## Data cleaning phase process
 
+**PHASE 1**
+
+**STANDARDIZING NUMERICS COLUMNS**
+  
+The cleaning are done on the following column where we noticed unusual Numerics values,symbols and text.
+Also note that this cleaning are carry out before we carry out our analysis and RCA
+ - **Timestamp** -- are critical for trend analysis, cleaning them first ensured that sorting, filtering and comparisons worked properly. We fixed malformed and inconsistent formats, recast from text to datetime.
+ - **JuiceTemperatureC_In** -- this column are neccessary for the determinations of the various temperatgure of the juice as at when produced. it contains some unusual rows like 'WAY TOO HOT','SENSOR_BROKEN','COLD!','HOT!'
+ - **ActualCapTorque_Nm** -- The actual "tightness" measured for the cap on this bottle, in Newton
+meters.
+ - **AmbientTemperatureC_Line** -- The air temperature around the production line when this 
+bottle was processed, in degrees Celsius.  
+
+**PHASE 2**
+
+   **STANDARDIZING TEXT COLUMNS**
+
+- **Defect Result(String):** this column tells us the kind of problem (if any) was found with this bottle: "None" (no defect), 
+"Underfilled" (not enough juice), "Leaky_Cap" (the cap leaks), or "Both" (both underfilled and leaky). so all other similar rows are group and categorize into this category
+- **LeakTestResult(String):** The outcome of the test to see if the bottle leaks: "Pass" (it doesn't leak) or 
+"Fail" (it leaks).
 
 
