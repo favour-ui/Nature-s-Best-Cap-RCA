@@ -7,7 +7,11 @@
 - [Business Impact](#business-impact)  
 - [Data Exploration and Schema Design](#data-exploration-and-schema-design)  
 - [ER Diagram](#ER-Diagram)  
-- [Key Insights](#key-insights)  
+- [Data cleaning phase process](#Data-cleaning-phase-process)
+    - [PHASE 1](#PHASE-1)
+    - [PHASE 2](#PHASE-2)
+    - [PHASE 3](#PHASE-3)
+    - [PHASE 4](#PHASE-4)
 - [Dashboard Features](#dashboard-features)  
 - [Results/Findings](#resultsfindings)  
 - [Recommendations](#recommendations)
@@ -46,7 +50,7 @@ The ER diagram is use to visualize table relationships and track foreign keys us
 
 ## Data cleaning phase process
 
-**PHASE 1**
+  **PHASE 1**
 
 **STANDARDIZING NUMERICS COLUMNS**
   
@@ -59,7 +63,7 @@ meters.
  - **AmbientTemperatureC_Line** -- The air temperature around the production line when this 
 bottle was processed, in degrees Celsius.  
 
-**PHASE 2**
+  **PHASE 2**
 
    **STANDARDIZING TEXT COLUMNS**
 
@@ -68,7 +72,7 @@ bottle was processed, in degrees Celsius.
 - **LeakTestResult(String):** The outcome of the test to see if the bottle leaks: "Pass" (it doesn't leak) or 
 "Fail" (it leaks).
 
- **PHASE 3**
+   **PHASE 3**
 
    **REMOVING DUPLICATES**
 We tested key columns to identify duplicate values in the dataset. After analysis, we removed all duplicate rows. In total, over 32,000 duplicate records were deleted, ensuring the dataset is accurate, consistent, and ready for reliable analysis.
@@ -114,7 +118,7 @@ GROUP BY ProductionEventSK,BottleID_Natural,Timestamp
 HAVING COUNT(*) > 1;
 ```
 
- **PHASE 3**
+   **PHASE 4**
  
 **Handling NULL Values**
 During the data cleaning process, several key columns contained missing values (NULL) such as:
@@ -123,32 +127,31 @@ During the data cleaning process, several key columns contained missing values (
  - ActualCapTorque_Nm
  - CapHopperLevel_Percent
 
-### Solution Applied
+  ### Solution Applied
 
- **1. Detection of NULLs**
+   **1. Detection of NULLs**
  
-Queried each column to identify how many rows contained missing values.
+  Queried each column to identify how many rows contained missing values.
 
- **2. Calculation of Replacement Values**
+   **2. Calculation of Replacement Values**
  
-Computed the column average (AVG()) using only non-NULL records.
+  Computed the column average (AVG()) using only non-NULL records.
 
- **3. Imputation**
+   **3. Imputation**
  
-Replaced all NULL values with their respective column averages, ensuring consistency in analysis.
+  Replaced all NULL values with their respective column averages, ensuring consistency in analysis.
 
- **4. Validation**
+   **4. Validation**
  
-Rechecked the columns to confirm no remaining NULL values.
+  Rechecked the columns to confirm no remaining NULL values.
 
-### Why This Approach?
+ ### Why This Approach?
 
 - Using averages avoids dropping valuable records.
 
 - Maintains dataset size for downstream analysis.
 
 - Provides a balanced, non-biased replacement that reflects typical operating values.
-
 
 ## Hypothesis Exploration
 
