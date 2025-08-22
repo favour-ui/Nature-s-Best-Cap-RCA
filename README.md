@@ -16,3 +16,14 @@ From the 2 days of leaky cap issues (July 2–3):
  - 3,355 leaky caps recorded, with thousands more in the following week
  - Daily losses jumped to 34.3% compared to just 2.1% the previous week
  - Financial losses totaled about ₦45,000 in 2 days, versus only ₦6,000 the week before
+
+## Data Exploration and Schema Design
+We worked on a structured production dataset built around a star schema with a central fact table called "FactProductionEvent"
+- DimDate -- This is the calendar table
+- DimMachine -- This table lists all the production machines in our factory.
+- DimNozzle -- This table provides details about the small parts (nozzles) on our juice filling machines.
+- DimJuiceBatch -- This table details each large quantity (batch) of juice we use
+- DimBottleBatch -- This table provides information about each delivery (batch) of empty bottles we receive
+- DimSupplier -- This table contains information about the companies that supply us with empty bottles
+
+
