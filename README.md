@@ -21,5 +21,7 @@ From the 2 days of leaky cap issues (July 2–3):
 We worked on a structured production dataset built around a star schema with a central fact table called "FactProductionEvent"
 - **DimDate** -- This is the calendar table
 - **DimSupplier** -- This table contains information about the companies that supply us with empty bottles
+- **DimCapBatch** -- This table provides information about each delivery (batch) of bottle caps we 
+receive. 
 
 ## ER DIAGRAM
