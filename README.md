@@ -137,9 +137,15 @@ Rechecked the columns to confirm no remaining NULL values.
 
 
 ## Hypothesis Exploration
+
  **Before we confirmed the root cause, we explore the following hypthesis:**
 
- - DATE WHEN THE ISSUES STARTED
- - CHECKING DEFECT WITH THE PRODUCTION LINE
- - CHECKING SHIFT TIME
- - CHECKING DEFECT WITH THE CAPTYPE AND CAPMATERIAL
+ - Date when the issues started: although the date has been given to us but we did that to confirm it and also to know the analysis days before now
+ - Checking defect with the production line
+ - Checking defect with shift time
+ - Checking defect with the Captype and Capmaterial
+
+## ANALYSIS
+
+
+
