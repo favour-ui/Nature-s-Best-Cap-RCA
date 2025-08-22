@@ -10,3 +10,9 @@ During the same operational week at the Onitsha plant, Nature Best Juice Co. exp
  - **Procurement Manager** → suspects a bad batch from a supplier 
  - **Quality Control Lead** → needs clarity on whether this was a system-wide issue 
  - **Line Managers** → want to isolate the problem quickly to resume normal production
+
+## BUSINESS IMPACT
+From the 2 days of leaky cap issues:
+ - 3,355 leaky caps in just 2 days, with thousands more recorded in the following week
+ - We aslo calculated a 34.3% loss of amount within a day which then is carry out for 2 days compare to our previous week of 2.1% loss
+ - we also calculated a total loss of #45000 within the 2 days (2-3) july compare to our previous week of #6000 loss
