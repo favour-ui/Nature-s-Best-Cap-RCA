@@ -1,5 +1,19 @@
 # Nature's Best Drink leakyCap RCA
 
+## 📚 Table of Contents
+- [Context and problem](#context-and-problem)  
+- [Problem Statement](#problem-statement)  
+- [Who are the stakeholders](#Who-are-the-stakeholders)  
+- [Business Impact](#business-impact)  
+- [Data Exploration and Schema Design](#data-exploration-and-schema-design)  
+- [ER Diagram](#ER-Diagram)  
+- [Key Insights](#key-insights)  
+- [Dashboard Features](#dashboard-features)  
+- [Results/Findings](#resultsfindings)  
+- [Recommendations](#recommendations)
+
+
+
 ## Context and problem
 In the same operational week at the Onitsha plant, Nature Best Juice Co. experienced an unusual spike in Leaky Cap defects across multiple lines, concentrated on July 2–3, 2025. The surge exceeded normal levels, disrupted production, and signaled potential issues in the capping process, materials, or controls that need urgent investigation.
 
@@ -11,20 +25,20 @@ During the same operational week at the Onitsha plant, Nature Best Juice Co. exp
  - **Quality Control Lead** → needs clarity on whether this was a system-wide issue 
  - **Line Managers** → want to isolate the problem quickly to resume normal production
 
-## BUSINESS IMPACT
+## Business Impact
 From the 2 days of leaky cap issues (July 2–3):
  - 3,355 leaky caps recorded, with thousands more in the following week
  - Daily losses jumped to 34.3% compared to just 2.1% the previous week
  - Financial losses totaled about ₦45,000 in 2 days, versus only ₦6,000 the week before
 
 ## Data Exploration and Schema Design
-We worked on a structured production dataset built around a star schema with a central fact table called "FactProductionEvent"
+We worked on a structured production dataset built around a star schema with a central fact table called "**FactProductionEvent**"
 - **DimDate** -- This is the calendar table
 - **DimSupplier** -- This table contains information about the companies that supply us with empty bottles
 - **DimCapBatch** -- This table provides information about each delivery (batch) of bottle caps we 
 receive. 
 
-## ER DIAGRAM
+## ER Diagram
 
 The ER diagram is use to visualize table relationships and track foreign keys used during analysis.
 
