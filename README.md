@@ -297,6 +297,20 @@ The sudden rise in LeakyCap defects on July 2–3, 2025 was linked to a faulty s
 
 ### VISUALIZATIONS
 
+|Procurement Manager|
+|------|
+
+ <img width="620" height="346" alt="procument manager" src="https://github.com/user-attachments/assets/bc0818c7-5d32-4d3e-a866-8b642d009d77" /> 
+ 
+ |Quality Control Lead|
+ |------|
+ 
+ <img width="616" height="346" alt="Quality Control Lead" src="https://github.com/user-attachments/assets/abada81b-711e-4f24-b7c9-5d46d8e6191f" />
+ 
+ |Line Managers|
+ |------|
+ 
+ <img width="602" height="328" alt="Line Managers" src="https://github.com/user-attachments/assets/9a12cfd6-eacc-423f-b5fb-31bdf64ea641" /> |
 
 
 
